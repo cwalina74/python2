@@ -29,18 +29,19 @@ D = {'1531 Green St APT 3 Philadelphia PA 19130':
 
 
 #Program
+print(D.keys())
+ui = input('Please choose a property to look at ')
 
-ui = input('Enter key ')
 if ui in D:
     lookup = (D[ui])
     print(lookup.keys())
     ui2 = input('Which topic would you like to know about from the listed keys? ')
     if ui2 in lookup:
-        lookup2 = lookup[ui2]
-        print(lookup.keys())
+        lookup2 = (lookup[ui2])
+        print(lookup2.keys())
         ui3 = input('Which topic would you like to know about from the listed keys? ')
         if ui3 in lookup2:
-            print(lookup2.keys())
+            print(lookup2[ui3])
 
     else:
         print('Not a valid key')
